@@ -17,134 +17,134 @@
 
 ## ベンチマーク
 
-### Recall@10
+## Recall@10
 
-| Rank | Publisher | Model | Score |
-|------|-----------|-------|-------|
-| 1 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 0.8231 |
-| 2 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 0.8209 |
-| 3 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 0.8136 |
-| 4 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 0.8059 |
-| 5 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 0.8016 |
-| 6 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 0.8015 |
-| 7 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 0.7922 |
-| 8 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 0.7799 |
-| 9 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 0.7778 |
-| 10 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 0.7734 |
-| 11 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 0.7654 |
-| 12 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 0.7647 |
-| 13 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 0.7622 |
-| 14 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 0.7562 |
-| 15 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 0.7478 |
-| 16 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 0.7399 |
-| 17 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 0.7383 |
-| 18 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 0.7352 |
-| 19 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 0.7342 |
-| 20 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 0.7193 |
-| 21 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 0.7155 |
-| 22 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 0.7103 |
-| 23 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 0.7058 |
-| 24 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 0.6978 |
-| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.6819 |
-| 26 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 0.6730 |
-| 27 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.6641 |
-| 28 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.6595 |
-| 29 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 0.6454 |
-| 30 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 0.6416 |
-| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.6152 |
-| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | 0.6000 |
-| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 0.5656 |
-| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 0.2471 |
-| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 0.1988 |
-| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 0.1798 |
-| 37 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 0.1334 |
-| 38 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 0.1298 |
+| Rank | Publisher | Model | Release Date | Score |
+|------|-----------|-------|-------------|-------|
+| 1 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 2025-08 | 0.823 |
+| 2 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 2026-03 | 0.821 |
+| 3 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 2026-01 | 0.814 |
+| 4 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 2026-01 | 0.806 |
+| 5 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 2025-11 | 0.802 |
+| 6 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 2025-07 | 0.802 |
+| 7 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 2026-01 | 0.792 |
+| 8 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 2026-02 | 0.780 |
+| 9 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 2025-04 | 0.778 |
+| 10 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 2025-10 | 0.773 |
+| 11 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 2026-01 | 0.765 |
+| 12 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 2025-06 | 0.765 |
+| 13 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 2024-01 | 0.762 |
+| 14 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 2026-02 | 0.756 |
+| 15 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 2025-09 | 0.748 |
+| 16 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 2025-06 | 0.740 |
+| 17 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 2026-02 | 0.738 |
+| 18 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 2024-02 | 0.735 |
+| 19 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2025-06 | 0.734 |
+| 20 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 2024-12 | 0.719 |
+| 21 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 2024-09 | 0.715 |
+| 22 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 2024-01 | 0.710 |
+| 23 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 2025-04 | 0.706 |
+| 24 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 2024-12 | 0.698 |
+| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.682 |
+| 26 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 2025-06 | 0.673 |
+| 27 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.664 |
+| 28 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2024-04 | 0.660 |
+| 29 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.645 |
+| 30 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.642 |
+| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2023-09 | 0.615 |
+| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | N/A | 0.600 |
+| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 2025-10 | 0.566 |
+| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 2023-11 | 0.247 |
+| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 2023-06 | 0.199 |
+| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 2025-08 | 0.180 |
+| 37 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 2025-10 | 0.133 |
+| 38 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 2021-08 | 0.130 |
 
-### Precision@10
+## Precision@10
 
-| Rank | Publisher | Model | Score |
-|------|-----------|-------|-------|
-| 1 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 0.1884 |
-| 2 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 0.1868 |
-| 3 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 0.1852 |
-| 4 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 0.1850 |
-| 5 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 0.1826 |
-| 6 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 0.1817 |
-| 7 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 0.1814 |
-| 8 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 0.1777 |
-| 9 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 0.1770 |
-| 10 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 0.1768 |
-| 11 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 0.1744 |
-| 12 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 0.1744 |
-| 13 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 0.1736 |
-| 14 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 0.1721 |
-| 15 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 0.1720 |
-| 16 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 0.1698 |
-| 17 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 0.1696 |
-| 18 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 0.1684 |
-| 19 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 0.1670 |
-| 20 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 0.1634 |
-| 21 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 0.1630 |
-| 22 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 0.1628 |
-| 23 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 0.1622 |
-| 24 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 0.1586 |
-| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.1577 |
-| 26 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 0.1526 |
-| 27 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 0.1517 |
-| 28 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.1514 |
-| 29 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.1483 |
-| 30 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 0.1479 |
-| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.1418 |
-| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | 0.1368 |
-| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 0.1210 |
-| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 0.0563 |
-| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 0.0421 |
-| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 0.0378 |
-| 37 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 0.0318 |
-| 38 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 0.0215 |
+| Rank | Publisher | Model | Release Date | Score |
+|------|-----------|-------|-------------|-------|
+| 1 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 2025-08 | 0.188 |
+| 2 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 2026-01 | 0.187 |
+| 3 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 2026-01 | 0.185 |
+| 4 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 2026-03 | 0.185 |
+| 5 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 2026-01 | 0.183 |
+| 6 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 2025-07 | 0.182 |
+| 7 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 2026-02 | 0.181 |
+| 8 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 2025-11 | 0.178 |
+| 9 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 2025-04 | 0.177 |
+| 10 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 2026-01 | 0.177 |
+| 11 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 2026-02 | 0.174 |
+| 12 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 2024-01 | 0.174 |
+| 13 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 2026-02 | 0.174 |
+| 14 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 2025-10 | 0.172 |
+| 15 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 2025-06 | 0.172 |
+| 16 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 2025-06 | 0.170 |
+| 17 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 2024-02 | 0.170 |
+| 18 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 2025-09 | 0.168 |
+| 19 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 2024-12 | 0.167 |
+| 20 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 2024-01 | 0.163 |
+| 21 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 2025-04 | 0.163 |
+| 22 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 2024-09 | 0.163 |
+| 23 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2025-06 | 0.162 |
+| 24 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 2024-12 | 0.159 |
+| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.158 |
+| 26 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.153 |
+| 27 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 2025-06 | 0.152 |
+| 28 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.151 |
+| 29 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2024-04 | 0.148 |
+| 30 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.148 |
+| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2023-09 | 0.142 |
+| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | N/A | 0.137 |
+| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 2025-10 | 0.121 |
+| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 2023-11 | 0.056 |
+| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 2023-06 | 0.042 |
+| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 2025-08 | 0.038 |
+| 37 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 2025-10 | 0.032 |
+| 38 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 2021-08 | 0.021 |
 
-### nDCG@10
+## nDCG@10
 
-| Rank | Publisher | Model | Score |
-|------|-----------|-------|-------|
-| 1 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 0.7255 |
-| 2 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 0.7083 |
-| 3 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 0.7069 |
-| 4 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 0.6956 |
-| 5 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 0.6908 |
-| 6 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 0.6806 |
-| 7 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 0.6662 |
-| 8 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 0.6657 |
-| 9 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 0.6634 |
-| 10 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 0.6590 |
-| 11 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 0.6523 |
-| 12 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 0.6492 |
-| 13 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 0.6329 |
-| 14 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 0.6278 |
-| 15 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 0.6255 |
-| 16 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 0.6206 |
-| 17 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 0.6199 |
-| 18 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 0.6176 |
-| 19 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 0.6118 |
-| 20 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 0.6004 |
-| 21 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 0.5969 |
-| 22 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 0.5897 |
-| 23 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 0.5895 |
-| 24 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 0.5858 |
-| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.5713 |
-| 26 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 0.5628 |
-| 27 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 0.5563 |
-| 28 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.5553 |
-| 29 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 0.5225 |
-| 30 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 0.5211 |
-| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 0.4947 |
-| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | 0.4939 |
-| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 0.4857 |
-| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 0.1879 |
-| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 0.1696 |
-| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 0.1275 |
-| 37 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 0.1105 |
-| 38 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 0.0876 |
+| Rank | Publisher | Model | Release Date | Score |
+|------|-----------|-------|-------------|-------|
+| 1 | Google | [gemini-embedding-2-preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/embedding-2) | 2026-03 | 0.725 |
+| 2 | Tencent | [kalm-embedding-gemma3-12b-2511](https://huggingface.co/tencent/KaLM-Embedding-Gemma3-12B-2511) | 2025-11 | 0.708 |
+| 3 | Google | [gemini-embedding-001](https://developers.googleblog.com/ja/gemini-embedding-available-gemini-api/) | 2025-07 | 0.707 |
+| 4 | SB Intuitions | [sarashina-embedding-v2-1b](https://huggingface.co/sbintuitions/sarashina-embedding-v2-1b) | 2025-08 | 0.696 |
+| 5 | Voyage AI | [voyage-4-large](https://huggingface.co/voyageai/voyage-4-large) | 2026-01 | 0.691 |
+| 6 | Voyage AI | [voyage-4](https://huggingface.co/voyageai/voyage-4) | 2026-01 | 0.681 |
+| 7 | Voyage AI | [voyage-4-nano](https://huggingface.co/voyageai/voyage-4-nano) | 2026-01 | 0.666 |
+| 8 | Perplexity | [pplx-embed-v1-0.6b](https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b) | 2026-02 | 0.666 |
+| 9 | Alibaba | [qwen3-embedding-8b](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 2025-06 | 0.663 |
+| 10 | Cohere | [cohere-embed-v4.0](https://docs.cohere.com/docs/cohere-embed) | 2025-04 | 0.659 |
+| 11 | Amazon | [nova-2-multimodal-embeddings-v1](https://docs.aws.amazon.com/nova/latest/userguide/nova-embeddings.html) | 2025-10 | 0.652 |
+| 12 | OpenAI | [text-embedding-3-large](https://platform.openai.com/docs/models/text-embedding-3-large) | 2024-01 | 0.649 |
+| 13 | Voyage AI | [voyage-4-lite](https://huggingface.co/voyageai/voyage-4-lite) | 2026-01 | 0.633 |
+| 14 | Jina AI | [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) | 2026-02 | 0.628 |
+| 15 | Jina AI | [jina-embeddings-v5-text-nano](https://huggingface.co/jinaai/jina-embeddings-v5-text-nano) | 2026-02 | 0.625 |
+| 16 | Google | [embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m) | 2025-09 | 0.621 |
+| 17 | BAAI | [bge-m3](https://huggingface.co/BAAI/bge-m3) | 2024-02 | 0.620 |
+| 18 | Alibaba | [qwen3-embedding-4b](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2025-06 | 0.618 |
+| 19 | Jina AI | [jina-embeddings-v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 2025-06 | 0.612 |
+| 20 | Snowflake | [snowflake-arctic-embed-l-v2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0) | 2024-12 | 0.600 |
+| 21 | Nagoya University | [ruri-v3-310m](https://huggingface.co/cl-nagoya/ruri-v3-310m) | 2025-04 | 0.597 |
+| 22 | OpenAI | [text-embedding-3-small](https://platform.openai.com/docs/models/text-embedding-3-small) | 2024-01 | 0.590 |
+| 23 | IBM | [granite-embedding-278m-multilingual](https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual) | 2024-12 | 0.590 |
+| 24 | Jina AI | [jina-embeddings-v3](https://huggingface.co/jinaai/jina-embeddings-v3) | 2024-09 | 0.586 |
+| 25 | Microsoft | [multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.571 |
+| 26 | Alibaba | [qwen3-embedding-0.6b](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 2025-06 | 0.563 |
+| 27 | Microsoft | [.microsoft-multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) | 2023-06 | 0.556 |
+| 28 | Amazon | [titan-embed-text-v2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2024-04 | 0.555 |
+| 29 | Microsoft | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.522 |
+| 30 | Microsoft | [.multilingual-e5-small-elasticsearch](https://huggingface.co/intfloat/multilingual-e5-small) | 2023-06 | 0.521 |
+| 31 | Amazon | [titan-embed-text-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) | 2023-09 | 0.495 |
+| 32 | Elastic | [BM25 (Kuromoji)](https://www.elastic.co/docs/reference/elasticsearch/plugins/analysis-kuromoji-analyzer) | N/A | 0.494 |
+| 33 | NVIDIA | [llama-embed-nemotron-8b](https://huggingface.co/nvidia/llama-embed-nemotron-8b) | 2025-10 | 0.486 |
+| 34 | Amazon | [titan-embed-image-v1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html) | 2023-11 | 0.188 |
+| 35 | Elastic | [ELSER](https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-elser) | 2023-06 | 0.170 |
+| 36 | MongoDB | [mdbr-leaf-mt](https://huggingface.co/MongoDB/mdbr-leaf-mt) | 2025-08 | 0.127 |
+| 37 | sentence-transformers | [all-minilm-l6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | 2021-08 | 0.111 |
+| 38 | Redis | [langcache-embed-v3-small](https://huggingface.co/redis/langcache-embed-v3-small) | 2025-10 | 0.088 |
 
 ## 評価方法
 
